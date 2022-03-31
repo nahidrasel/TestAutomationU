@@ -10,6 +10,8 @@ namespace TestAutomationU
         public void AreEqual()
         {
             Assert.AreEqual("expected", "Actual");
+            Assert.That("actual", Is.EqualTo("expectd"));
+
         }
         [Test]
         public void AreEqualWithDescription()
@@ -42,8 +44,8 @@ namespace TestAutomationU
         [Test]
         public void AreEqualArrays()
         {
-            var expected= new int[] { 1, 2, 3 };
-            var actual= new int[] { 1, 3, 2 };
+            var expected = new int[] { 1, 2, 3 };
+            var actual = new int[] { 1, 3, 2 };
             Assert.AreEqual(expected, actual);
         }
 
@@ -59,6 +61,7 @@ namespace TestAutomationU
         public void AreNotEqual()
         {
             Assert.AreNotEqual("expected", "actual");
+            Assert.That("actual", Is.Not.EqualTo("expected"));
         }
         [Test]
         public void IsStringEmpty()
@@ -72,7 +75,32 @@ namespace TestAutomationU
         {
             Assert.GreaterOrEqual(2, 3);
         }
+        [Test]
+        public void ContainsOneInstanceOfThree()
+        {
+            int[] arrayOfValues = new int[] { 1, 2, 3 };
+            Assert.That(arrayOfValues, Has.Exactly(1).EqualTo(3));
 
+            Assert.That(arrayOfValues, Has.One.EqualTo(3));
 
+            Assert.GreaterOrEqual(2, 3);
+        }
+        [Test]
+        public void IsMoreThanFiveAndLessThan100()
+        {
+
+            var testValue = 100;
+            Assert.That(testValue, Is.GreaterThan(5).Or.LessThan(100));
+
+    }
+        [Test]
+        public void BeCarefull()
+        {
+
+            var yourValue = true;
+            Assert.That(yourValue, Is.True.Or.False);
+            Assert.That(yourValue, Is.True.And.False);
+
+        }
     }
 }
