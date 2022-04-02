@@ -2,9 +2,9 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-
 namespace TestAutomationU
 {
+   //TestClass
     public class AdminTests
     {
         public IWebDriver driver { get; set; }
@@ -24,6 +24,7 @@ namespace TestAutomationU
            // adminPage.LogOut();
             driver.Quit();
         }
+        //TestMethod
         [Test]
         public void AddRoom()
         {

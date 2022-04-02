@@ -5,19 +5,19 @@ namespace TestAutomationU
     public class Chapter6_Skip_Ignore
     {
         [SetUp]
-        public void SetUpTest() {...}
+        public void SetUpTest() { "..."}
 
         [TearDown]
-        public void CleanUpTest() {...}
+        public void CleanUpTest() { "..." }
 
 
         [Test]
         [Explicit(reason:"reason")]
-        public void AddRoom() {...}
+        public void AddRoom() {"..."}
 
         [Test]
         [Ignore(reason:"ours is not to question why")]
-        public void AddSuite() {...}
+        public void AddSuite() {"..."}
 
     }
 }

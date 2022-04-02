@@ -12,7 +12,7 @@ namespace TestAutomationU
         public void Description()
         {
 
-            var originalRoom = kl;
+            var originalRoom = 7;
         }
         [Test(Author = "Nahid Test")]
         [Author(name: "Nahid", email: "nhdrasel@gmail.com")]
