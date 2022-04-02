@@ -1,9 +1,10 @@
-﻿using System;
-
-namespace TestWithNunit.Services
+﻿namespace TestAutomationU
 {
-    public class RoomServies
+    internal class Room
     {
+        public Room()
+        {
+        }
 
         public string Name { get; set; }
         public object Type { get; set; }

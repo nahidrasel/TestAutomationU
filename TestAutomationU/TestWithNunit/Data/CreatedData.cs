@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestWithNunit.Data
 {
-    internal class CreatedData
+    public class CreatedData
     {
     }
 }
