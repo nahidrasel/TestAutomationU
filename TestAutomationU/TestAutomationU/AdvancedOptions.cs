@@ -13,7 +13,6 @@ namespace TestAutomationU
             Warn.Unless(isProcessd, Is.EqualTo(true)
                 .After(1).Minutes.PollEvery(10).Seconds);
             Console.WriteLine("still going");
-
         }
         [Test]
         public void AssertPassThrowsExceptionn()
@@ -38,8 +37,14 @@ namespace TestAutomationU
 
             });
         }
+        /*
+         * [Test]
+        public void AssertingWithFluentAssertions()
+        {
+            "actual".Should().Be("expected");
+        }
 
-
+        */
 
 
     }

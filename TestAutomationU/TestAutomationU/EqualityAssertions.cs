@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-
+using System;
 
 namespace TestAutomationU
 {
@@ -10,8 +10,7 @@ namespace TestAutomationU
         public void AreEqual()
         {
             Assert.AreEqual("expected", "Actual");
-            Assert.That("actual", Is.EqualTo("expectd"));
-
+            Assert.That("actual", Is.EqualTo("expected"));
         }
         [Test]
         public void AreEqualWithDescription()
@@ -39,13 +38,28 @@ namespace TestAutomationU
         [Test]
         public void AreEqualNumbersWithInTolerance()
         {
+            Assert.AreEqual(2, 2.1, .5);
+        }
+
+        [Test]
+        public void AreEqualNumbersOutsideOfTolerance()
+        {
             Assert.AreEqual(2, 23, .5);
         }
         [Test]
-        public void AreEqualArrays()
+        public void AreEqualArraysWithoutSort()
         {
             var expected = new int[] { 1, 2, 3 };
             var actual = new int[] { 1, 3, 2 };
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void AreEqualArraysWithSorting()
+        {
+            var expected = new int[] { 1, 2, 3 };
+            var actual = new int[] { 1, 3, 2 };
+            Array.Sort(actual);
             Assert.AreEqual(expected, actual);
         }
 
@@ -88,11 +102,10 @@ namespace TestAutomationU
         [Test]
         public void IsMoreThanFiveAndLessThan100()
         {
-
             var testValue = 100;
             Assert.That(testValue, Is.GreaterThan(5).Or.LessThan(100));
 
-    }
+        }
         [Test]
         public void BeCarefull()
         {

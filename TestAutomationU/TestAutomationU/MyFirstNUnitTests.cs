@@ -12,6 +12,7 @@ namespace TestAutomationU
             Console.WriteLine("See you in the test output!");
             Assert.True(true);
         }
+
         [Test]
         public static void ThisIsAStaticTest()
         {
