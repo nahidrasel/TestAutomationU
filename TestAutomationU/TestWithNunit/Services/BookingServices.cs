@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestWithNunit.Services
 {
-    internal class BookingServices
+    public class BookingServices
     {
     }
 }

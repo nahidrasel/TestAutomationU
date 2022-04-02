@@ -15,7 +15,7 @@ namespace TestAutomationU
         public void AddRoom(
             [Values("9", "99")] string roomNumber,
             [Range(10, 100)] string Price,
-            [Values] bool accessible, RoomType roomType)
+            [Values] bool accessible)
         {
         }
         

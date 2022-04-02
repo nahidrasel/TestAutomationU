@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAutomationU", "TestAutomationU\TestAutomationU.csproj", "{22C013AB-FC2D-467F-86B1-8C068F8121DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWithNunit", "TestWithNunit\TestWithNunit.csproj", "{6E4002FD-D364-4E47-B800-B20798B62FB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWithNunit", "TestWithNunit\TestWithNunit.csproj", "{6E4002FD-D364-4E47-B800-B20798B62FB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
