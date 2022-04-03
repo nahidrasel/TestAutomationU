@@ -5,7 +5,7 @@ using OpenQA.Selenium.Chrome;
 namespace TestAutomationU
 {
    //TestClass
-   /* public class AdminTests
+   /* public class Chapter7_AdminTests
     {
         public IWebDriver driver { get; set; }
         public AdminPage adminPage { get; set; }
