@@ -15,6 +15,7 @@ namespace TestWithNunit
         public void MyTest(string value)
         {
             CheckAsserts(value);
+            Console.WriteLine(value);
 
         }
     }
